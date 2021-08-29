@@ -32,4 +32,8 @@ function draw(){
         clear();
         game.player();
     }
+
+    if(gameState === 2){
+        game.end();
+    }
 }
