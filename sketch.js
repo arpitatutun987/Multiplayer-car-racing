@@ -1,5 +1,5 @@
 var gameState = 0,car1,car2,car3,car4;
-var c1,c2,c3,c4,forn,player,game;
+var c1,c2,c3,c4,form,player,game;
 var playerCount,cars,track,ground;
 var distance = 0,allPlayers,database;
 
@@ -30,6 +30,10 @@ function draw(){
 
     if(gameState === 1){
         clear();
-        game.player();
+        game.play();
+    }
+
+    if(gameState === 2){
+        game.end();
     }
 }
